@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluid Systems: Pump, Flow Network &amp; Hydraulic Lift — Walker Bush</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <div class="logo"><a href="../index.html">Walker Bush</a></div>
+    <div class="nav-links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="detail-head">
+  <div class="wrap">
+    <a class="back-link" href="../index.html#projects">← Back to projects</a>
+    <div class="pmeta">Fluid Mechanics · Hydraulics · Team Project</div>
+    <h1>Fluid Systems: Pump, Multiline Flow &amp; Hydraulic Lift</h1>
+    <p class="lede">A three-stage fluid mechanics design project: build a positive displacement pump to move water between reservoirs, split flow across a multiline pipe network, then convert the system into a working <strong>hydraulic lift</strong>. I handled calculations and data recording, and contributed to the design — which we iterated from sketch to working system on the spot when the materials demanded it.</p>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="wrap">
+
+    <div class="gallery g2" style="margin-bottom:48px">
+      <figure><img src="../images/fluid-1.jpg" alt="Hand-drawn schematic of the pump system with reservoir, valves, Y-connectors, and syringes"><figcaption>Design schematic — reservoir, valves &amp; syringe network</figcaption></figure>
+      <figure><img src="../images/fluid-2.jpg" alt="Assembled fluid system with syringes, tubing, and red stopcock valves during testing"><figcaption>System build — valve network under test</figcaption></figure>
+    </div>
+
+    <div class="p-cols">
+      <div class="p-col">
+        <h4>Engineering Work</h4>
+        <ul>
+          <li>Designed a syringe-driven pump using a Y-connector and dual check-style valve arrangement</li>
+          <li>Measured mass flow rates across trials (~0.024–0.033 kg/s) and computed volume flow, averages, and standard deviation</li>
+          <li>Compared flow behavior in small vs. large diameter lines — observed the velocity/pressure trade-off firsthand</li>
+          <li>Built a hydraulic lift driving two 20 mL syringes from one 60 mL master syringe</li>
+        </ul>
+      </div>
+      <div class="p-col">
+        <h4>Problems Solved</h4>
+        <ul>
+          <li>Scrapped the original design when materials arrived and rebuilt a simpler, more modular layout</li>
+          <li>Traced volume losses in the hydraulic system to leakage and trapped air; proposed shorter tube runs and an air-bleed valve</li>
+          <li>Identified that consistent, controlled pump pressure — not maximum speed — eliminated most leakage</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Fluid Mechanics</span><span class="tag">Hydraulics</span><span class="tag">Flow Rate Analysis</span><span class="tag">Design Iteration</span><span class="tag">Data Recording</span><span class="tag">Prototyping</span>
+    </div>
+
+    <div class="proj-nav">
+      <a href="wind-turbine.html">← Previous: Wind Turbine Design</a>
+      <span></span>
+    </div>
+
+  </div>
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="mailto:bushwe@miamioh.edu">bushwe@miamioh.edu</a>
+      <a href="https://www.linkedin.com/in/walker-bush-856b57390" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="copyright">© 2026 Walker Bush</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><img src="" alt="Enlarged project photo"></div>
+<script>
+  const lb=document.getElementById('lightbox'),lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(i=>i.addEventListener('click',()=>{lbImg.src=i.src;lb.classList.add('open')}));
+  lb.addEventListener('click',()=>lb.classList.remove('open'));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+</script>
+</body>
+</html>
